@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FaithJourney</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginScreen">
+  <div class="login-box">
+    <h2>Welcome</h2>
+    <input id="username" placeholder="Enter your name">
+    <br><br>
+    <button onclick="login()">Enter</button>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div>FaithJourney</div>
+  <div>
+    <a href="#beliefs">Beliefs</a>
+    <a href="#prayer">Prayer</a>
+    <a href="#focus">Focus</a>
+    <a href="#mass">Mass</a>
+    <a href="#church">Church</a>
+    <a href="#adoration">Adoration</a>
+    <a href="#eucharist">Eucharist</a>
+    <a href="#bible">Bible</a>
+    <a href="#rosary">Rosary</a>
+    <a href="#commandments">Commandments</a>
+    <a href="#qa">Q&A</a>
+  </div>
+  <button onclick="toggleDark()">🌙</button>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <h1 id="welcomeText">Grow Closer to God</h1>
+  <p>By John Alkes</p>
+</header>
+
+<!-- CONTENT SECTIONS -->
+<section id="beliefs">
+  <h2>Core Catholic Beliefs</h2>
+  <div class="card">
+    <p>God created you on purpose and loves you deeply. You are never alone.</p>
+    <p>Jesus Christ is the Son of God who saved us through His death and resurrection.</p>
+    <p>The Church helps guide us and bring us closer to God through truth and sacraments.</p>
+  </div>
+</section>
+
+<section id="prayer">
+  <h2>Prayer</h2>
+  <div class="card">
+    <p>Prayer is talking to God honestly.</p>
+    <ul>
+      <li>Thank Him</li>
+      <li>Ask for help</li>
+      <li>Listen quietly</li>
+    </ul>
+  </div>
+</section>
+
+<section id="focus">
+  <h2>How to Focus in Prayer</h2>
+  <div class="card">
+    <ul>
+      <li>Find a quiet place</li>
+      <li>Put distractions away</li>
+      <li>Start small</li>
+      <li>Bring your mind back</li>
+    </ul>
+    <p>Even distracted prayer still counts.</p>
+  </div>
+</section>
+
+<section id="mass">
+  <h2>Going to Mass Consistently</h2>
+  <div class="card">
+    <ul>
+      <li>Pick a regular time</li>
+      <li>Treat it like a priority</li>
+      <li>Go with others</li>
+      <li>You are meeting Jesus</li>
+    </ul>
+  </div>
+</section>
+
+<section id="church">
+  <h2>Find a Nearby Catholic Church</h2>
+  <div class="card">
+    <p>Click below to find Catholic churches near you.</p>
+    <button onclick="findChurch()">Find Churches Near Me</button>
+  </div>
+</section>
+
+<section id="adoration">
+  <h2>Adoration</h2>
+  <div class="card">
+    <p>Spend quiet time with Jesus in the Eucharist. Just being there matters.</p>
+  </div>
+</section>
+
+<section id="eucharist">
+  <h2>The Eucharist</h2>
+  <div class="card">
+    <p>The Eucharist is truly Jesus — Body and Blood.</p>
+  </div>
+</section>
+
+<section id="bible">
+  <h2>The Bible</h2>
+  <div class="card">
+    <button onclick="showVerse()">Show Verse</button>
+    <p id="bibleText"></p>
+  </div>
+</section>
+
+<section id="rosary">
+  <h2>The Rosary</h2>
+  <div class="card"><h3>Joyful</h3><p>Annunciation, Visitation, Nativity, Presentation, Finding</p></div>
+  <div class="card"><h3>Sorrowful</h3><p>Agony, Scourging, Crowning, Carrying Cross, Crucifixion</p></div>
+  <div class="card"><h3>Glorious</h3><p>Resurrection, Ascension, Pentecost, Assumption, Coronation</p></div>
+</section>
+
+<section id="commandments">
+  <h2>Commandments</h2>
+  <div class="card">
+    <p>Put God first, honor others, live truthfully and with love.</p>
+  </div>
+</section>
+
+<section id="qa">
+  <h2>Q&A</h2>
+  <div class="card">
+    <p><strong>Why church?</strong> To grow closer to God.</p>
+    <p><strong>Does God love me?</strong> Yes, always.</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 FaithJourney
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
